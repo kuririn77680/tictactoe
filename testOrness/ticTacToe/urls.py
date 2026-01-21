@@ -1,8 +1,8 @@
 from django.urls import path
 
-from .views import Advertisements
+from .views import PlayX, Play0
 
 urlpatterns = [
-    path("x/", Advertisements.as_view(), name="x"),
-    path("o/", Advertisements.as_view(), name="o"),
+    path("x/", PlayX.as_view(), name="play-x"),
+    path("o/", Play0.as_view(), name="play-o"),
 ]
